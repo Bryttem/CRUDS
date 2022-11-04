@@ -59,7 +59,7 @@ router.patch('/:id', requireAuth, async (req: Request, res:Response, next: NextF
     } catch (error:  any) {
         console.log('~ file> rputer.ts ~ line18 ~ router', error)
 
-        if(error.message === 'Book not found'){
+        if(error.message === 'Toy not found'){
             return res.status(404).json({
                 message: error.message
             });
