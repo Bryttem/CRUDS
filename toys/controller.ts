@@ -6,7 +6,7 @@ const list = async () => {
 }
 
 const store = async (data: any) => {
-    if (!data.name) throw Error("propiety name is missing")
+    if (!data.name) throw Error("Toy name is missing")
     const toy = await repository.store(data);
     return toy;
 }

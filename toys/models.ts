@@ -4,7 +4,8 @@ const toySchema = new mongoose.Schema({
     id: String,
     name: String,
     description: String,
-    slug: String
+    price: String,
+    slug: String,
 
 });
 
